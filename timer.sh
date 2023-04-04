@@ -29,7 +29,7 @@ then
 					do
 				
 						echo $(paplay /usr/share/sounds/sound-icons/electric-piano-3.wav)
-						echo "Time up! Press x key to stop"
+						echo "Time up! Press ctrl+c key to stop"
 						#read -n 1 -r -s -p $'Press enter to continue...\n'
 						#if [ $k == 'x' ]
 						#then
