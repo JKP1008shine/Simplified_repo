@@ -1,0 +1,45 @@
+1. Double quotes "" can parse the variable but single quotes '' cannot.
+	For example- $ Myvar=99
+		     $ echo "Myvar"
+		     O/P
+		     99
+		But
+		     $ Myvar=99
+	     	     $ echo 'Myvar'
+		     O/P
+		     Myvar
+This is a important difference between "" and ''.
+
+
+
+
+
+2. unset command is used to unset a variable or remove the variable.
+	for example $ Myvar=90
+		    $ echo $Myvar
+		    O/P
+		    90
+			
+		    $ unset Myvar
+		    $ echo Myvar
+		    O/P
+		    
+
+The o/p is nothing as the Myvar is unset and has no value anymore.
+
+3. Important: What is environment in linux and what is inheriting environment, how it can be done?
+
+4. export command: this command assigns values to the variables to its present shell and to the child shell of the present shell.
+		
+	For example: $ export myvar=90
+		     $ echo $myvar
+			o/p
+		     $ 90
+		     $ bash
+		--new child of bash--
+		     $ echo $myvar
+		     $ 90
+		     $ exit
+		-- exiting from the child shell--
+		
+	# one more important thing is that export only assigns value only for the current shell and its child shell but not for the parent shell.
